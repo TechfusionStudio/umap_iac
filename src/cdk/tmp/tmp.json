@@ -65,31 +65,18 @@
     "dev": {
       "env": {
         "amplifyRepositoryUrl": "https://github.com/TechfusionStudio/umap_cms_frontend",
-        "amplifyUsersRepositoryUrl": "https://github.com/TechfusionStudio/umap_frontend",
         "amplifyOauthToken": "",
         "amplifyBranch": "dev/0",
-        "region": "ap-northeast-1",
-        "userPoolId": "",
-        "clientId": "",
-        "apiEndpoint": "https://api-dev.umap.techfusionstudio.com",
-        "googleMapApiKey": "",
-        "userSiteUrl": "USER_SITE_URL",
-        "chatGptApiKey": "CHAT_GPT_API_KEY"
+        "region": "ap-northeast-1"
       }
     },
     "prod": {
       "env": {
         "amplifyRepositoryUrl": "https://github.com/TechfusionStudio/umap_cms_frontend",
-        "amplifyUsersRepositoryUrl": "https://github.com/TechfusionStudio/umap_frontend",
         "amplifyOauthToken": "",
         "amplifyBranch": "main",
         "region": "ap-northeast-1",
-        "userPoolId": "",
-        "clientId": "",
-        "apiEndpoint": "https://api-dev.umap.techfusionstudio.com",
-        "googleMapApiKey": "",
-        "userSiteUrl": "USER_SITE_URL",
-        "chatGptApiKey": "CHAT_GPT_API_KEY"
+        "apiEndpoint": "END"
       }
     }
   }

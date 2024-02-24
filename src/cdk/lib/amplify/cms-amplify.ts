@@ -19,6 +19,28 @@ export class CmsAmplify extends Construct {
       name: 'UMapCmsApp',
       repository: props.amplifyRepositoryUrl ?? '',
       oauthToken: props.amplifyOauthToken,
+      environmentVariables: [
+        {
+          name: 'USER_POOL_ID',
+          value: props.userPoolId,
+        },
+        {
+          name: 'CLIENT_ID',
+          value: props.clientId,
+        },
+        {
+          name: 'API_ENDPOINT',
+          value: props.apiEndpoint,
+        },
+        {
+          name: 'USER_SITE_URL',
+          value: props.userSiteUrl,
+        },
+        {
+          name: 'CHAT_GPT_API_KEY',
+          value: props.chatGptApiKey,
+        }
+      ],
     });
 
     new CfnBranch(this, 'UMapCmsAppBranch', {

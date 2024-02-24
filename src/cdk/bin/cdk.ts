@@ -15,8 +15,15 @@ const getAppEnvironment = (): any => {
   if (envVals == undefined) throw new Error('Invalid environment.');
   const env = {
     amplifyRepositoryUrl: envVals['env']['amplifyRepositoryUrl'],
+    amplifyUsersRepositoryUrl: envVals['env']['amplifyUsersRepositoryUrl'],
     amplifyOauthToken: envVals['env']['amplifyOauthToken'],
     amplifyBranch: envVals['env']['amplifyBranch'],
+    userPoolId: envVals['env']['userPoolId'],
+    clientId: envVals['env']['clientId'],
+    apiEndpoint: envVals['env']['apiEndpoint'],
+    googleMapApiKey: envVals['env']['googleMapApiKey'],
+    userSiteUrl: envVals['env']['userSiteUrl'],
+    chatGptApiKey: envVals['env']['chatGptApiKey'],
     region: envVals['env']['region'],
   };
   return env;
